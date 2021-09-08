@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Typecontent=" text
+    /html; charset=UTF-8" />
+    <title>jQuery cloudTag.js Demo</title>
+    <style type="text/css">
+        body {
+            background-color: #08152f;
+        }
+
+        .tagBall {
+            height: 180px;
+            width: 100%;
+            margin-top: 40px;
+            overflow: hidden hidden;
+
+        }
+
+        .tag {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            color: #000;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/cloudTag.js"></script>
+    <title></title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.tagBall').cloudTag({
+                ballSize: 100
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="tagBall">
+    <a class="tag" target="_blank" href="#">高新技术企业</a>
+    <a class="tag" target="_blank" href="#">省科技型企业</a>
+    <a class="tag" target="_blank" href="#">数字化转型</a>
+    <a class="tag" target="_blank" href="#">智能制造</a>
+    <a class="tag" target="_blank" href="#">新产品开发</a>
+    <a class="tag" target="_blank" href="#">检验检测</a>
+    <a class="tag" target="_blank" href="#">标准制定</a>
+    <a class="tag" target="_blank" href="#">节能改造</a>
+</div>
+</body>
+</html>

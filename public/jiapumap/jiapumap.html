@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0 0 0 0;
+            overflow: hidden hidden;
+        }
+
+
+        .icon_tjw {
+            position: absolute;
+            left: 62%;
+            top: 82%;
+            width: 100px;
+            height: 25px;
+        }
+
+        .icon_xqd {
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            width: 100px;
+            height: 25px;
+        }
+
+        .icon_hd {
+            position: absolute;
+            left: 70%;
+            top: 70.3%;
+            width: 80px;
+            height: 25px;
+        }
+
+        .icon_xs {
+            position: absolute;
+            left: 62%;
+            top: 36.2%;
+            width: 80px;
+            height: 25px;
+        }
+
+        .icon_bc {
+            position: absolute;
+            left: 70%;
+            top: 73.5%;
+            width: 80px;
+            height: 25px;
+        }
+
+        .icon_dx {
+            position: absolute;
+            left: 55%;
+            top: 46%;
+            width: 80px;
+            height: 25px;
+        }
+
+        .icon_wc {
+            position: absolute;
+            left: 48%;
+            top: 50.5%;
+            width: 80px;
+            height: 25px;
+        }
+
+        #tjw_ins {
+            position: absolute;
+            left: 62%;
+            top: 33%;
+            width: 100px;
+            height: 25px;
+        }
+
+        #xqd_ins {
+            position: absolute;
+            left: 49%;
+            top: 4%;
+            width: 100px;
+            height: 25px;
+        }
+
+        #hd_ins {
+            position: absolute;
+            left: 70%;
+            top: 18.7%;
+            width: 80px;
+            height: 25px;
+        }
+
+        #xs_ins {
+            position: absolute;
+            left: 70%;
+            top: 0%;
+            width: 80px;
+            height: 25px;
+        }
+
+        #bc_ins {
+            position: absolute;
+            left: 70%;
+            top: 22.5%;
+            width: 80px;
+            height: 25px;
+        }
+
+        /* 			#dx_ins {
+                        position: absolute;
+                        left: 55%;
+                        top: 45%;
+                        width: 80px;
+                        height: 25px;
+                    }
+
+                    #wc_ins {
+                        position: absolute;
+                        left: 48%;
+                        top: 49%;
+                        width: 80px;
+                        height: 25px;
+                    } */
+    </style>
+    <script type="text/javascript">
+        var park = "";
+
+        function showImg(park) {
+            if (park == "tjw") {
+                document.getElementById("tjw_ins").style.display = 'block';
+            }
+            if (park == "xqd") {
+                document.getElementById("xqd_ins").style.display = 'block';
+            }
+            if (park == "hd") {
+                document.getElementById("hd_ins").style.display = 'block';
+            }
+            if (park == "bc") {
+                document.getElementById("bc_ins").style.display = 'block';
+            }
+            if (park == "xs") {
+                document.getElementById("xs_ins").style.display = 'block';
+            }
+            if (park == "dx") {
+                document.getElementById("dx_ins").style.display = 'block';
+            }
+            if (park == "wc") {
+                document.getElementById("wc_ins").style.display = 'block';
+            }
+        }
+
+        function hideImg(park) {
+            if (park == "tjw") {
+                document.getElementById("tjw_ins").style.display = 'none';
+            }
+            if (park == "xqd") {
+                document.getElementById("xqd_ins").style.display = 'none';
+            }
+            if (park == "hd") {
+                document.getElementById("hd_ins").style.display = 'none';
+            }
+            if (park == "bc") {
+                document.getElementById("bc_ins").style.display = 'none';
+            }
+            if (park == "xs") {
+                document.getElementById("xs_ins").style.display = 'none';
+            }
+            if (park == "dx") {
+                document.getElementById("dx_ins").style.display = 'none';
+            }
+            if (park == "wc") {
+                document.getElementById("wc_ins").style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+    <img width="" height="" src="MAP_定稿(3).jpg"/>
+    <a href="http://www.enter-iot.cn/BigScreen/#/Overview/taojiawan" onMouseOut="hideImg('tjw')"
+       onmouseover="showImg('tjw')"
+       target="_parent"><img class="icon_tjw" src="地图_0000_陶家湾小微园.png"/></a>
+    <a href="http://www.enter-iot.cn/BigScreen/#/Overview/xique" onMouseOut="hideImg('xqd')"
+       onmouseover="showImg('xqd')"
+       target="_parent"><img class="icon_xqd" src="地图_0001_喜鹊斗小微园.png"/></a>
+    <a href="http://www.enter-iot.cn/BigScreen/#/Overview/huanding" onMouseOut="hideImg('hd')"
+       onmouseover="showImg('hd')"
+       target="_parent"><img class="icon_hd" src="地图_0002_环丁小微园.png"/></a>
+    <a href="http://www.enter-iot.cn/BigScreen/#/Overview/xiangshan" onMouseOut="hideImg('xs')"
+       onmouseover="showImg('xs')"
+       target="_parent"><img class="icon_xs" src="地图_0003_香山小微园.png"/></a>
+    <a href="http://www.enter-iot.cn/BigScreen/#/Overview/beicun" onMouseOut="hideImg('bc')" onmouseover="showImg('bc')"
+       target="_parent"><img class="icon_bc" src="地图_0004_北村小微园.png"/></a>
+    <a href="https://console.huaweicloud.com/dlv/vision/share/?id=26359e39bb2641f8b909298cf85b152a&locale=zh-cn&region=cn-east-3"
+       target="_parent"><img class="icon_dx" src="地图_0005_丁新小微园.png"/></a>
+    <a href="https://console.huaweicloud.com/dlv/vision/share/?id=9c118ec0cab54065a41a411b426955cb&locale=zh-cn&region=cn-east-3"
+       target="_parent"><img class="icon_wc" src="地图_0006_吴城小微园.png"/></a>
+</div>
+<div id="tjw_ins" style="display:none; ">
+    <img src="陶家湾.png">
+</div>
+<div id="xqd_ins" style="display:none;height:50px;back-ground:#f00;position:absolute;">
+    <img src="喜鹊斗.png">
+</div>
+<div id="hd_ins" style="display:none;height:50px;back-ground:#f00;position:absolute;">
+    <img src="环丁.png">
+</div>
+<div id="xs_ins" style="display:none;height:50px;back-ground:#f00;position:absolute;">
+    <img src="香山.png">
+</div>
+<div id="bc_ins" style="display:none;height:50px;back-ground:#f00;position:absolute;">
+    <img src="北村.png">
+</div>
+</body>
+</html>

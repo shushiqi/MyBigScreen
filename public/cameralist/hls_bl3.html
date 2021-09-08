@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>长兴伯良纺织 打卷车间</title>
+    <!-- �����videojs��7.0�汾���ϵģ�����VHSЭ��⣬�ɲ���HLS��ý����Ƶ -->
+    <link href="video-js.css" rel="stylesheet" type="text/css">
+    <script src="videojs-ie8.min.js"></script>
+    <script src="video.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0 0 0 0;
+            overflow: hidden hidden;
+        }
+
+        .icon_close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url(closebtn.jpg);
+            z-index: 1;
+        }
+
+        video {
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+<img class="icon_close" src="closebtn.jpg" onclick="closepage()">
+<video id='myvideo' class="video-js vjs-default-skin" controls>
+    <source src="http://60.12.105.250:7086/live/cameraid/1000300%242/substream/1.m3u8">
+</video>
+
+<script>
+    var player = videojs('myvideo', {}, function () {
+        console.log('videojs��������ʼ���ɹ�')
+    })
+    player.play();
+</script>
+
+<script type="text/javascript">
+    function closepage() {
+        self.close();
+    }
+</script>
+</body>
+
+</html>
